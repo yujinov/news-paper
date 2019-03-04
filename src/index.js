@@ -1,4 +1,4 @@
-import './index.css';
+// import './index.css';
 
 let root = document.getElementById('root');
 
@@ -9,8 +9,12 @@ let textContainer = document.createElement('p');
 textContainer.id = 'text-container';
 
 root.innerHTML = require('./page.html').html;
-root.appendChild(titlesContainer);
-root.appendChild(textContainer);
+
+console.log(root.getElementsByClassName('newsContent'));
+document.getElementById('newsList').appendChild(titlesContainer);
+document.getElementById('newsContent').appendChild(textContainer);
+//root.appendChild(titlesContainer);
+// root.appendChild(textContainer);
 
 let articles;
 //displayTitles(articles)
